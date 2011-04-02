@@ -24,16 +24,7 @@ $(function() {
 			//out
 		}
 	);
-	
-	$("#hack").hover(
-		function () {
-			//over
-		},
-		function () {
-			$(this).css({'display' : 'none'});
-		}
-	);
-	
+		
 	
 	/*****/
 	$("div.photo").each(function (i) {
