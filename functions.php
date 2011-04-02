@@ -31,18 +31,6 @@ $options = array (
 			"std" => "",
 			"type" => "text"),
 			
-	array ("name" => "Categories at the top menu (ID)",
-			"desc" => "Which categories should be availiable at the top menu. Divide IDs with comma (,).",
-			"id" => $shortname."_top_menu_categories",
-			"std" => "",
-			"type" => "text"),
-			
-	array ("name" => "Pages at the top menu (ID)",
-			"desc" => "Which pages should be availiable at the top menu. Divide IDs with comma (,).",
-			"id" => $shortname."_top_menu_pages",
-			"std" => "",
-			"type" => "text"),
-			
 	array ("type" => "close"),
 	
 	
