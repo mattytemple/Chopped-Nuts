@@ -10,7 +10,7 @@
 						}
 					?>
 					<?php if ($in_subcategory || in_category(get_option('pd_photos_category'))) : ?>
-                    <div id="colorselection">
+                    <!--<div id="colorselection">
                         <div class="colorsquare" id="bg1"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Choose color" width="84" height="18"/></div>
                         <div class="colorsquare" id="bg2"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Choose color" width="84" height="18"/></div>
                         <div class="colorsquare" id="bg3"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Choose color" width="84" height="18"/></div>
@@ -22,7 +22,7 @@
                         <div class="colorsquare" id="bg9"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Choose color" width="84" height="18"/></div>
                         <div class="colorsquare" id="bg10"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Choose color" width="84" height="18"/></div>
                         <div class="colorsquare" id="bg11"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Choose color" width="84" height="18"/></div>
-                    </div>
+                    </div>-->
                 	<div class="imagepan">
 	                    <img src="<?php print (get_post_meta($post->ID, 'big_photo_value', $single = true)) ? get_post_meta($post->ID, 'big_photo_value', $single = true) : get_bloginfo('template_directory').'/img/empty.gif' ?>" />
                     </div>
