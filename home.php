@@ -3,7 +3,7 @@
 		<div id="homephotolatest">
 			<?php query_posts('cat='.get_option('pd_photos_category').'&showposts=1'); ?>
 			<?php while (have_posts()) : the_post(); ?>
-			<div class="latestphoto" style="width:9500px;height:auto;background:url(<?php print (get_post_meta($post->ID, 'big_photo_value', $single = true)) ? get_post_meta($post->ID, 'big_photo_value', $single = true) : get_bloginfo('template_directory').'/img/empty.gif' ?>) center center;">
+			<div class="latestphoto" style="width:9500px;height:auto;margin-left:auto;margin-right:auto;background:url(<?php print (get_post_meta($post->ID, 'big_photo_value', $single = true)) ? get_post_meta($post->ID, 'big_photo_value', $single = true) : get_bloginfo('template_directory').'/img/empty.gif' ?>) center center;">
 			    <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><img src="<?php print get_bloginfo('template_directory'); ?>/img/empty.gif" alt="<?php the_title(); ?>" width="950px" height="auto" /></a>
 			</div>
 			<?php endwhile; ?>
