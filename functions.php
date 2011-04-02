@@ -7,10 +7,9 @@
         'after_title' => '</h2>',
     ));
 */
-#Thanks Dan! http://blog.themeforest.net/wordpress/create-an-options-page-for-your-wordpress-theme/
 
-$themename = "Photographer Dream";
-$shortname = "pd";
+$themename = "Senile Robot";
+$shortname = "sr";
 
 $options = array (
 
@@ -86,7 +85,7 @@ function mytheme_admin() {
     if ( $_REQUEST['reset'] ) echo '<div id="message" class="updated fade"><p><strong>'.$themename.' settings reset.</strong></p></div>';
 ?>
 <div class="wrap">
-    <h2><?php echo $themename; ?> settings</h2>
+    <h2><?php echo $themename; ?> Settings</h2>
     <form method="post">
     <?php foreach ($options as $value) { 
         switch ($value['type']) {
