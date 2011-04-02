@@ -5,7 +5,6 @@
         </div>
     </div>
 </div>
-<div id="hack"><a href="http://www.exet.tk" target="_blank" id="hacklink"><img src="<?php print get_bloginfo('template_directory'); ?>/img/empty.gif" alt="hackalt" width="220" height="160" /></a></div>
 <?php wp_footer(); ?>
 <?php if (get_option('pd_google_analytics')): ?>
 	<script type="text/javascript">
