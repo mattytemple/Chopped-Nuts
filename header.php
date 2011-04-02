@@ -31,8 +31,7 @@
             </div>
             <div id="topmenu">
             	<ul class="mainnav">
-                	<?php wp_list_categories('include='.get_option('pd_top_menu_categories').'&title_li=&depth=1&hide_empty=0'); ?>
-                	<?php wp_list_pages('include='.get_option('pd_top_menu_pages').'&title_li=&sort_column=menu_order'); ?>
+                	<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
               </ul>
             </div>
          </div> <!-- end header -->
