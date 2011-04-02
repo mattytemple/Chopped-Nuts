@@ -218,7 +218,7 @@ div.colorsquare {
 
 #comments {
 	margin-top:15px;
-	display:none;
+	//display:none;
 	overflow:hidden;
 	float:left;
 	background-color:#0F0F0F;
