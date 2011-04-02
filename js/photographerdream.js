@@ -77,34 +77,6 @@ $(function() {
 	}
 	
 	var intervalId = setInterval(asd, 100);
-
-	
-	$(".colorsquare").hover(
-		function () {
-			//over
-			var newcolor;
-			newcolor = $(this).css('background-color');
-			$('.imagepan').css({'position' : 'relative'});
-			$('#colorselection').css({'position' : 'relative'});
-			
-			if (window.innerWidth || window.innerHeight){ 
-				docwidth = window.innerWidth; 
-				docheight = window.innerHeight; 
-			} 
-			//IE Mozilla 
-			if (document.body.clientWidth || document.body.clientHeight){ 
-				docwidth = document.body.clientWidth; 
-				docheight = document.body.clientHeight; 
-			} 
-			
-			$('#padding').css({'display' : 'block', 'background-color': newcolor, 'width' : docwidth+'px', 'height' : docheight+'px'});
-		},
-		function () {
-			 $('.imagepan').css({'position' : 'relative'});
-			 $('#colorselection').css({'position' : 'relative'});
-			 $('#padding').css({'background-color' : '', 'width' : '1px', 'height' : '1px'});
-		}
-	);
 	
 	$("#opencomments").click(function () { 
     	$("#comments").slideToggle("medium");
