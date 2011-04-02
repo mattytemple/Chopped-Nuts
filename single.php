@@ -37,7 +37,6 @@
                         <?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
                     </div>
                     
-                    <a href="#" id="opencomments" class="javalink">Open comments (<?php comments_number('0', '1', '%' );?>)</a>
                     <div id="comments">
                         <?php comments_template(); ?>
                     </div>
