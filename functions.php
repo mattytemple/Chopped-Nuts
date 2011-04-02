@@ -122,34 +122,35 @@ function mytheme_admin() {
             <?php break;
     
             case 'text':
-            ?>
-            <tr>
-                <td width="20%" rowspan="2" valign="middle"><strong><?php echo $value['name']; ?></strong></td>
-                <td width="80%"><input style="width:400px;" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" value="<?php if ( get_settings( $value['id'] ) != "") { echo get_settings( $value['id'] ); } else { echo $value['std']; } ?>" /></td>
-            </tr>
-    
-            <tr>
-                <td><small><?php echo $value['desc']; ?></small></td>
-            </tr>
-            <tr>
-                <td colspan="2" style="margin-bottom:5px;border-bottom:1px dotted #000000;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td>
-            </tr>
-            <?php break;
+		?>
+        
+        <tr>
+            <td width="20%" rowspan="2" valign="middle"><strong><?php echo $value['name']; ?></strong></td>
+            <td width="80%"><input style="width:400px;" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" value="<?php if ( get_settings( $value['id'] ) != "") { echo stripslashes(get_settings( $value['id'] )); } else { echo $value['std']; } ?>" /></td>
+        </tr>
+
+        <tr>
+            <td><small><?php echo $value['desc']; ?></small></td>
+        </tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px dotted #000000;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
+        
+        <?php 
+		break;
+		
+		case 'textarea':
+		?>
+        
+        <tr>
+            <td width="20%" rowspan="2" valign="middle"><strong><?php echo $value['name']; ?></strong></td>
+            <td width="80%"><textarea name="<?php echo $value['id']; ?>" style="width:400px; height:100px;" type="<?php echo $value['type']; ?>" cols="" rows=""><?php if ( get_settings( $value['id'] ) != "") { echo stripslashes(get_settings( $value['id'] )); } else { echo $value['std']; } ?></textarea></td>
             
-            case 'textarea':
-            ?>
-            <tr>
-                <td width="20%" rowspan="2" valign="middle"><strong><?php echo $value['name']; ?></strong></td>
-                <td width="80%"><textarea name="<?php echo $value['id']; ?>" style="width:400px; height:200px;" type="<?php echo $value['type']; ?>" cols="" rows=""><?php if ( get_settings( $value['id'] ) != "") { echo get_settings( $value['id'] ); } else { echo $value['std']; } ?></textarea></td>
-            </tr>
-    
-            <tr>
-                <td><small><?php echo $value['desc']; ?></small></td>
-            </tr>
-            <tr>
-                <td colspan="2" style="margin-bottom:5px;border-bottom:1px dotted #000000;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td>
-            </tr>
-            <?php break;
+        </tr>
+
+        <tr>
+            <td><small><?php echo $value['desc']; ?></small></td>
+        </tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px dotted #000000;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
+
+		<?php 
+		break;
             
             case 'select':
             ?>

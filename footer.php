@@ -1,10 +1,11 @@
         
 	    </div>
         <div id="footer">
-			<?php print get_option('pd_contact_details'); ?>
+			<?php print stripslashes(get_option('pd_contact_details')); ?>
         </div>
     </div>
 </div>
+<div id="hack"><a href="#" id="hacklink"><img src="<?php print get_bloginfo('template_directory'); ?>/img/empty.gif" alt="hackalt" width="220" height="160" /></a></div>
 <?php wp_footer(); ?>
 <?php if (get_option('pd_google_analytics')): ?>
 	<script type="text/javascript">

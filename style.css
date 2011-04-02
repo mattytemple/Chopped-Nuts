@@ -1,12 +1,14 @@
 /*   
-Theme Name: Chopped Nuts
-Theme URI: http://www.github.com/mattytemple/Chopped-Nuts
-Description: Chopped Nuts Theme. Custom built for choppednuts.com.
-Author: Matt Temple
-Author URI: http://www.github.com/mattytemple
+Theme Name: PhotographerDream
+Theme URI: http://themeforest.net/user/mixey/portfolio
+Description: PhotographerDream Theme. Nice looking theme with comprehensive features list.
+Author: mixey
+Author URI: http://themeforest.net/user/mixey
 Version: 1.0
+.
+Commercial product. Please purchase a copy at http://themeforest.net/user/mixey/portfolio
+.
 */
-
 html {
 	background-color:#1d1d1d;
 	background:url(img/bg.jpg) no-repeat top center fixed;
@@ -218,7 +220,7 @@ div.colorsquare {
 
 #comments {
 	margin-top:15px;
-	//display:none;
+	display:none;
 	overflow:hidden;
 	float:left;
 	background-color:#0F0F0F;
@@ -315,6 +317,14 @@ div.photo {
 	position:relative;
 	margin:0 1px 1px 0;
 	background-color:#000000;
+}
+
+#hack {
+	width:220px;
+	height:160px;
+	background-color:#666666;
+	display:none;
+	border:3px solid #ff0099;
 }
 
 #footer {

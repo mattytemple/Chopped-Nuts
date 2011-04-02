@@ -10,7 +10,7 @@
 						}
 					?>
 					<?php if ($in_subcategory || in_category(get_option('pd_photos_category'))) : ?>
-                    <!--<div id="colorselection">
+                    <div id="colorselection">
                         <div class="colorsquare" id="bg1"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Choose color" width="84" height="18"/></div>
                         <div class="colorsquare" id="bg2"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Choose color" width="84" height="18"/></div>
                         <div class="colorsquare" id="bg3"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Choose color" width="84" height="18"/></div>
@@ -22,19 +22,10 @@
                         <div class="colorsquare" id="bg9"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Choose color" width="84" height="18"/></div>
                         <div class="colorsquare" id="bg10"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Choose color" width="84" height="18"/></div>
                         <div class="colorsquare" id="bg11"><img src="<?php bloginfo('template_directory'); ?>/img/empty.gif" alt="Choose color" width="84" height="18"/></div>
-                    </div>-->
+                    </div>
                 	<div class="imagepan">
 	                    <img src="<?php print (get_post_meta($post->ID, 'big_photo_value', $single = true)) ? get_post_meta($post->ID, 'big_photo_value', $single = true) : get_bloginfo('template_directory').'/img/empty.gif' ?>" />
                     </div>
-                    <script type="text/javascript">
-						$(function() {
-							$(".imagepan img").imagetool({
-								viewportWidth: 930,
-								viewportHeight: 500,
-								loading: "<?php bloginfo('template_directory'); ?>/img/loader.gif"
-							});
-						});
-                    </script>
                     <?php endif; ?>
                     
                     <div class="photocomment">
@@ -46,7 +37,7 @@
                         <?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
                     </div>
                     
-                    <!--<a href="#" id="opencomments" class="javalink">Open comments (<?php comments_number('0', '1', '%' );?>)</a>-->
+                    <a href="#" id="opencomments" class="javalink">Open comments (<?php comments_number('0', '1', '%' );?>)</a>
                     <div id="comments">
                         <?php comments_template(); ?>
                     </div>

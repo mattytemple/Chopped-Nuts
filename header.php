@@ -18,7 +18,6 @@
 <?php wp_head(); ?>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.imagetool.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.scrollTo.js"></script>
 
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/photographerdream.js"></script>
