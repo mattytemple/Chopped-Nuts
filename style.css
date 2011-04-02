@@ -152,10 +152,10 @@ ul.category_tabs li.current-cat {
 }
 #singleholder {
 /*	margin:0 35px;*/
-	margin:10px 35px 20px 35px;
+	margin:10px 15px 20px 15px;
 	overflow:hidden;
 /*	padding:10px 0 20px 0;*/
-	paddin:10px 35px 20px 35px;
+	paddin:10px 15px 20px 15px;
 }
 
 #colorselection {
@@ -276,6 +276,10 @@ div.w50 {
 	overflow:hidden;
 	float:left;
 	width:448px;
+}
+
+#commentslist {
+	width: 503px;
 }
 
 
