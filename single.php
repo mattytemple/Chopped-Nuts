@@ -18,8 +18,8 @@
 	                    				$ht=$height; 
 	                    				$wd=$width;
 	                    			?>
-	                    			<div class="singlephoto" style="width:950px; height:<?php echo $ht; ?>px; margin-left:auto; margin-right:auto; background:url(<?php print (get_post_meta($post->ID, 'big_photo_value', $single = true)) ? get_post_meta($post->ID, 'big_photo_value', $single = true) : get_bloginfo('template_directory').'/img/empty.gif' ?>) no-repeat center center;">
-	                    			    <img src="<?php print get_bloginfo('template_directory'); ?>/img/empty.gif" alt="<?php the_title(); ?>" width="950px" height="<?php echo $ht; ?>px" />
+	                    			<div class="singlephoto" style="width:950px; height:<?php echo $ht; ?>px; margin-left:auto; margin-right:auto; background:url(<?php print (get_post_meta($post->ID, 'big_photo_value', $single = true)) ? get_post_meta($post->ID, 'big_photo_value', $single = true) : get_bloginfo('template_directory').'/img/nice-try.gif' ?>) no-repeat center center;">
+	                    			    <img src="<?php print get_bloginfo('template_directory'); ?>/img/nice-try.gif" alt="<?php the_title(); ?>" width="950px" height="<?php echo $ht; ?>px" />
 	                    			</div>
                     </div>
                     <?php endif; ?>
