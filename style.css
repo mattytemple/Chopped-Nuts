@@ -7,8 +7,7 @@ Author URI: http://www.mattytemple.com
 Version: 1.0
 */
 html {
-	background-color:#1d1d1d;
-	background:url(img/bg.jpg) no-repeat top center fixed;
+	background: #53163f url(img/bg.jpg) no-repeat top center fixed;
 }
 
 html, body {
@@ -152,10 +151,10 @@ ul.category_tabs li.current-cat {
 }
 #singleholder {
 /*	margin:0 35px;*/
-	margin:10px 15px 20px 15px;
+	margin:10px 20px 20px 20px;
 	overflow:hidden;
 /*	padding:10px 0 20px 0;*/
-	paddin:10px 15px 20px 15px;
+	paddin:10px 20px 20px 20px;
 }
 
 #colorselection {
