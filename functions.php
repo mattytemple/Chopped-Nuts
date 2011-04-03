@@ -210,7 +210,7 @@ $new_meta_boxes = array(
 		"name" => "big_photo",
 		"std" => "",
 		"title" => "Large photo",
-		"description" => "Using the \"<em>Add an Image</em>\" button, upload an image and paste the URLs here."
+		"description" => "Using the \"<em>Add an Image</em>\" button, upload an image and paste the URLs here (recommended size: 950px wide)."
 	)
 	
 );
