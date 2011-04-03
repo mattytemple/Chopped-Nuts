@@ -10,7 +10,6 @@
                     
                     <?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
                     
-                    <a href="#" id="opencomments" class="javalink">Open comments (<?php comments_number('0', '1', '%' );?>)</a>
                     <div id="comments">
                     	<a name="commentanchor" id="commentanchor"></a>
                       	<?php comments_template(); ?>
