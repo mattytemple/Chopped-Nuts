@@ -1,6 +1,6 @@
-			<!--<ul class="category_tabs">
+			<ul class="category_tabs">
             	<?php wp_list_categories('child_of='.get_option('pd_photos_category').'&orderby=name&title_li=&depth=10'); ?>    
-            </ul>-->
+            </ul>
             <div class="clear"></div>
             
             <div id="homephotos">
