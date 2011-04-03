@@ -12,7 +12,7 @@
 					<?php if ($in_subcategory || in_category(get_option('pd_photos_category'))) : ?>
                     
                 	<div class="imagepan">
-	                    <img src="<?php print (get_post_meta($post->ID, 'big_photo_value', $single = true)) ? get_post_meta($post->ID, 'big_photo_value', $single = true) : get_bloginfo('template_directory').'/img/empty.gif' ?>" />
+	                    <img src="<?php print (get_post_meta($post->ID, 'big_photo_value', $single = true)) ? get_post_meta($post->ID, 'big_photo_value', $single = true) : get_bloginfo('template_directory').'/img/nice-try.gif' ?>" />
                     </div>
                     <?php endif; ?>
                     
